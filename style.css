@@ -1,0 +1,119 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 1.125rem;
+}
+
+/* main contant  */
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 10px  10px 20px rgba(0, 0, 0, 0.4), -10px 0 20px  rgba(0, 0, 0, 0.4);
+}
+
+.container-img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-img::before {
+    content: url(./images/icon-view.svg);
+    display: block;
+    position: absolute;
+    padding: 500px;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.container-img:hover::before {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.container-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.container-dis {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* time and ethereum */
+.info {
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+    min-height: 2.5rem;
+}
+
+.eth {
+    position: absolute;
+    left: 0;
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: hsl(215, 51%, 70%);
+    opacity: 0.2;
+}
+
+/* creator  */
+.creator {
+    color:hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 1rem;
+
+}
+
+.profile-pic {
+    margin-right: 0.9rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 10%;
+}
+
+.creator-name {
+    color: hsl(0, 0%, 100%);
+}
+
+/* hover effect for creator name and h1 title */
+.creator-name:hover, .container-title:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
