@@ -8,6 +8,10 @@
 body {
     background-color: hsl(217, 54%, 11%);
     font-size: 1.125rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 /* main contant  */
