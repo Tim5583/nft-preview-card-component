@@ -18,6 +18,8 @@
 
 ## My process
 
+-[live URL](https://card-component-nft-preview.netlify.app)
+
 ### Built with
 
 - Semantic HTML5 markup
